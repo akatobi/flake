@@ -8,6 +8,7 @@
 <?php
 
 include 'bd.php';
+include 'menu.php';
 
 $news = mysql_query("SELECT * FROM `news` WHERE 1");
 
