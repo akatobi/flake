@@ -41,14 +41,13 @@
 
 .addNews {
     
-    position: fixed;
-    width: 100%;
-    height: 100%;
+    
+    
 }
 
 .newsText {
     
-    height: 400;
-    width: 300;
+    height: 400px;
+    width: 300px;
     resize: none;
 }

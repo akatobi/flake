@@ -17,6 +17,7 @@ tinymce.init({
     <body>
 <?php
 include 'bd.php';
+include 'menu.php';
 ?>
         
         <div class="addNews">
@@ -24,7 +25,9 @@ include 'bd.php';
             <p>имя</p>
             <textarea></textarea>
             <p>текст</p>
-            <textarea id="textNews" class="newsText"></textarea>
+            <div class="newsText">
+            <textarea id="textNews" ></textarea>
+                </div>
             <p>файлы</p>
         </form>
         </div>
