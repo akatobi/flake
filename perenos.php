@@ -2,14 +2,25 @@
 	<head>
 		<meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <script src="jquery-2.1.4.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+       		function click(){
+       			
+
+       		}
+        </script>
 
 	</head>
 
 	<body>
 		<?php
 			include 'bd.php';
+			$num=mysql_query("SELECT COUNT(*) FROM news");
+			$res=mysql_fetch_row($num);
+			echo $res[0];
+			$i=0;
 
-			$news=mysql_query("SELECT * FROM `news` order by `id` desc limit 1");  
+			$news=mysql_query("SELECT * FROM `news` order by `id` desc limit $i, 2");  
 			while ($row = mysql_fetch_array($news)) {
     
 
@@ -23,9 +34,7 @@
 				<br/>';
 
 			}
-			$num=mysql_fetch_row($news);
-			echo $num;
-
+			
 		?>
 		<input type="button" value="далее" onclick="click()" id="but">
 	</body>
