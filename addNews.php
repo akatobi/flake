@@ -2,7 +2,6 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
-        <!-- Place inside the <head> of your HTML -->
         <script src="jquery.min.js" type="text/javascript"></script>
         <script>
         function send() {
@@ -28,9 +27,12 @@ include 'bd.php';
 include 'menu.php';
 ?>
       <form id = 'news'>
-            <textarea name="newsName"></textarea>
-          <input type="text" name="textNews">
-            
+          <p>название</p>
+            <input type="text" name="newsName">
+          <p>текст</p>
+            <input type="text" name="textNews">
+            <br/>
+            <br/>
           <input type="button" value="отправить" onclick="send()">
         </form>  
       
